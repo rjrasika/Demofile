@@ -15,4 +15,6 @@ node{
 		sh 'echo deploy Phase'
         }
 	
+	stage('Prod Env deploy'){
+		sh 'echo Production deploy Phase'
 }
