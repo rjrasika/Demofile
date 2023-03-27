@@ -3,12 +3,16 @@ node{
 		sh 'echo DevOps Build Phase'
 	}
 	
-	stage('Deploy'){
-		sh 'echo DevOps Deploy Phase'
+	stage('Unit Test'){
+		sh 'echo DevOps Unit test Phase'
 	}
 
-	stage('Test'){
-		sh 'echo DevOps Test Phase'
+	stage('Integration test'){
+		sh 'echo Intergration Test Phase'
 	}
-
+	
+        stage('Deploy'){
+		sh 'echo deploy Phase'
+        }
+	
 }
